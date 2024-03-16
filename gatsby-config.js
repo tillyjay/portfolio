@@ -9,11 +9,6 @@ module.exports = {
   plugins: [ 
     "gatsby-plugin-sass", 
     "gatsby-plugin-image", 
-    "gatsby-plugin-sitemap", {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-      }
-    }, 
     "gatsby-plugin-sharp", 
     "gatsby-transformer-sharp", {
       resolve: 'gatsby-source-filesystem',
@@ -30,6 +25,14 @@ module.exports = {
         "path": "./src/pages/"
       },
       __key: "pages"
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "markdown",
+        "path": "./src/markdown/"
+      },
+      __key: "markdown"
     }
   ]
 };
