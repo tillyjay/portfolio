@@ -1,10 +1,13 @@
 import * as React from "react"
 import "../styles/main.scss";
+import "../components/Navigation"
+import Navigation from "../components/Navigation";
 
 
 const IndexPage = () => {
   return (
     <main>
+    <Navigation />  
     <h1 className="firstIndexFont">HI. I'M TILLY JAY</h1>
     <h1 className="firstIndexFont">A</h1>
     <h1 className="secondIndexFont">Web Dev</h1>
