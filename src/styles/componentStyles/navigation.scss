@@ -22,7 +22,7 @@
     width: 50vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: -100;
+    z-index: -10;
   }
 
   .menu-toggle {
@@ -53,10 +53,13 @@
     height: 40px;
     border-radius: 50%;
     background-color: red; 
+    border: 3px solid black;
+
    }
    
 
   .menu {
+    position: relative;
     background-color: #333;
     display: none;
     width: 50vw; 
@@ -95,6 +98,33 @@
   }
 }
 
+
+.triangle-border {
+  display: block;
+  position: absolute;
+  bottom: -7px; // Position off the bottom of the page
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-top: 56px solid transparent; // Slightly larger than the actual triangle
+  border-bottom: 56px solid transparent; // Slightly larger than the actual triangle
+  border-right: 106px solid black; // Slightly larger than the actual triangle, with a border color
+  z-index: -100;
+ }
+
+// triangles
+.triangle {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid red;
+  z-index:-99;
+ }
 
 
 .box {
@@ -265,6 +295,11 @@
     transform: scale(1);
   }
 }
+
+
+ 
+
+
 
 
 //media query 

@@ -13,7 +13,11 @@ const Navigation = () => {
 
   return (
       <div className={`navigation ${menuOpen ? 'open' : ''}`}>
-      {menuOpen && <div className="overlay" onClick={toggleMenu}></div>}
+      {menuOpen && <div className="overlay" onClick={toggleMenu}> 
+      <div className='overlay'></div>
+      <div className='triangle-border'></div>
+       <div className='triangle'></div>
+       </div>}
       <div className="menu-toggle" onClick={toggleMenu}>
         <div className={`box ${menuOpen ? 'active' : 'not-active'}`}>
           <div className="btn">
@@ -57,6 +61,7 @@ const Navigation = () => {
             </div>
           </li> 
         </ul>
+   
       </div>
     </div>
   );
