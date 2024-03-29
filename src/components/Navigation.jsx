@@ -27,19 +27,34 @@ const Navigation = () => {
       <div className="menu">
         <ul>
           <li>
+          <div className="menu-item">
+          <div className="circle"></div>
             <Link to="/index">Home</Link>
+            </div>
           </li>
           <li>
+          <div className="menu-item">
+          <div className="circle"></div>
             <Link to="/portfolioexamples">Work</Link>
+            </div>
           </li>
           <li>
+          <div className="menu-item">
+          <div className="circle"></div>
             <Link to="/skills">Resume</Link>
+            </div>
           </li>
           <li>
+          <div className="menu-item">
+          <div className="circle"></div>
             <Link to="/contact">About</Link>
+            </div>
           </li>
           <li>
+          <div className="menu-item">
+          <div className="circle"></div>
             <Link to="/contact">Contact</Link>
+            </div>
           </li> 
         </ul>
       </div>

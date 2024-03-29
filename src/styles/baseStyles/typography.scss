@@ -24,3 +24,9 @@ $second-index-font: 'TanBuster', sans-serif;
 $headers-font: 'Fabrica', sans-serif;
 $p-text-font: 'Inter-Regular', sans-serif;
    
+:export {
+    firstIndexFont: $first-index-font;
+    secondIndexFont: $second-index-font;
+    headersFont: $headers-font;
+    pTextFont: $p-text-font;
+  }
