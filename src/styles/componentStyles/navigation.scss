@@ -1,4 +1,5 @@
 //navigation
+
 .navigation {
   position: fixed;
   top: 0;
@@ -12,6 +13,7 @@
   padding: 20px;
   z-index: 1000;
   overflow: hidden;
+
 
   .overlay {
     position: fixed;
@@ -72,11 +74,14 @@
 
       li {
         margin-top: 2rem;
+  
 
         a {
           color: #fff;
           text-decoration: none;
           font-size: 2rem;
+          font-family: $headers-font;
+
         }
       }
     }

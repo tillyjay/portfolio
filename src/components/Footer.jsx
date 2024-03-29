@@ -1,6 +1,5 @@
 import React from "react";
-import linkedinIcon from "../images/linkedinIcon.png";
-import githubIcon from "..images/githubIcon.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => {  
 
@@ -12,10 +11,10 @@ const Footer = () => {
                 <div className="circlesV"></div>
             </div>
             <a href="https://www.linkedin.com/in/tilly-campbell/" target="_blank" rel="noopener noreferrer">
-                <img src={linkedinIcon} alt="LinkedIn" />
+                <StaticImage className="linkedIcon" src="../images/linkedinIcon.png"></StaticImage>
             </a>
             <a href="https://github.com/tillyjay" target="_blank" rel="noopener noreferrer">
-                <img src={githubIcon} alt="GitHub" />
+                <StaticImage className="githubIcon" src="../images/githubIcon.png"></StaticImage>
             </a>
             <div>tillyJay 2024</div>
             <div className="circlesHorizontal">

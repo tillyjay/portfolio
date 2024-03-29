@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
-import '../styles/componentStyles/navigation.scss';
+
 
 
 const Navigation = () => {
@@ -27,7 +27,7 @@ const Navigation = () => {
       <div className="menu">
         <ul>
           <li>
-          <div className="menu-item">
+          <div className="menu-item ">
           <div className="circle"></div>
             <Link to="/index">Home</Link>
             </div>

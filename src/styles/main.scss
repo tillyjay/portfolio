@@ -1,5 +1,7 @@
 @import 'baseStyles/reset';
 @import 'baseStyles/typography';
+@import '../styles/componentStyles/navigation.scss';
+@import '../styles/componentStyles/footer.scss';
 
 .firstIndexFont {
     font-family: $first-index-font;
