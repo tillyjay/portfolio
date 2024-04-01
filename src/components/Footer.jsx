@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footerBase">
-            <div className="foot d-flex justify-content-end p-5">
+            <div className="foot d-flex justify-content-start p-5">
                 <div className="unskew d-flex mt-3">
             <div className="circlesVertical">
                 <div className="circlesV"></div>
