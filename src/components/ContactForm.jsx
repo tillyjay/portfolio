@@ -7,7 +7,6 @@ const ContactForm = () => {
    
     const formName = "contact-form";
 
-    };
 
     return (
         <>
@@ -44,13 +43,10 @@ const ContactForm = () => {
       </div>
       <button type="submit">Submit</button>
 
-
-
-
         </form>      
         </>
     );
-};
+}
 
 
 export default ContactForm;
