@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import Navigation from "../Navigation"
 import Footer from "../Footer"
-import { useLocation } from "react-router-dom";
 import "../../styles/main.scss";
 
 

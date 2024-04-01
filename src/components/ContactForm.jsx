@@ -11,16 +11,16 @@ const ContactForm = () => {
 
     return (
         <>
-        <form onSubmit={handleSubmit(onSubmit)} name={formName} method="POST" data-netlify="true">
+        <form className="d-flex flex-column contactform" onSubmit={handleSubmit(onSubmit)} name={formName} method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value={formName} />
+          <div className="formWrapper px-5">
         <div>
-        <label>Name</label>
-        <input {...register('name', { required: true })} />
+        <input className="inputBlock mt-5 px-4 py-2" placeholder="Name" {...register('name', { required: true })} />
         {errors.name && <span>This field is required</span>}
       </div>
       <div>
-        <label>Email</label>
-        <input
+        <input className="inputBlock mt-3 px-4 py-2"
+        placeholder="Email"
           type="email"
           {...register('email', {
             required: 'Email is required',
@@ -33,17 +33,16 @@ const ContactForm = () => {
         {errors.email && <span>{errors.email.message}</span>}
       </div>
       <div>
-        <label>Subject</label>
-        <input {...register('subject', { required: true })} />
+        <input className="inputBlock mt-4 px-4 py-2" placeholder="Subject" {...register('subject', { required: true })} />
         {errors.subject && <span>This field is required</span>}
       </div>
       <div>
-        <label>Message</label>
-        <textarea {...register('message', { required: true })} />
+        <textarea className="inputBlock mt-3 px-4 pt-3 pb-5" placeholder="Message" {...register('message', { required: true })} />
         {errors.message && <span>This field is required</span>}
       </div>
-      <button type="submit">Submit</button>
-
+      <button className="buttonSubmit mt-4 px-4 py-2" type="submit">Submit</button>
+      </div>
+   
         </form>      
         </>
     );

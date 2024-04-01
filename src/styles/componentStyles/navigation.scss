@@ -12,6 +12,7 @@
   justify-content: flex-start;
   z-index: 1000;
   overflow: hidden;
+  pointer-events: none;
 
   .overlay {
     position: fixed;
@@ -24,6 +25,7 @@
   }
 
   .menu-toggle {
+    pointer-events: all;
     position: absolute; 
     top: 30px; 
     right: 50px; 
