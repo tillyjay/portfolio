@@ -1,18 +1,25 @@
-
-
 .contactform {
-    background-color: aquamarine;
-    width: 80%; 
-    margin-bottom: 100px;
+  background-color: aquamarine;
+  width: 80%;
+  padding-bottom: 80px;
+  margin-bottom: 20px;
+
+}
+
+.formWrapper {
+    position: relative;
 }
 
 .inputBlock {
-    width: 100%;
-    box-sizing: border-box; 
-    align-self:center;
+  width: 100%;
+  box-sizing: border-box;
+  align-self: center;
 }
 
 .buttonSubmit {
-    margin: 40%;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
 }
-

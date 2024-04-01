@@ -1,14 +1,17 @@
-
 main {
-    height: 100vh;
-    margin-bottom: 100px;
+  height: 100vh;
 }
 
 .formDiv {
-    width: 100%;
+  width: 100%;
 }
 
 .sayHi {
-    margin-top: 20%;
-    font-size: 4.5rem;
+  font-size: 4.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .sayHi {
+    margin-top: 30%;
+  }
 }
