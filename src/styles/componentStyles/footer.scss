@@ -1,4 +1,26 @@
+.footerBase {
+    overflow: hidden;
+    height: 100px;
+}
+
+   
+.foot {
+    background-color: red;
+    width: 100%; 
+    margin: 0 auto; 
+    transform: skewY(-10deg);
+    z-index: -9999;
+    height: 300px;
+}
+
+.unskew {
+    transform: skewY(10deg);
+}
+
+.githubIcon {
+    width: 30px;
+}
 
 .linkedIcon {
-    width: 20px;
+    width: 30px;
 }

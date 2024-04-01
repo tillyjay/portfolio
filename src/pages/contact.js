@@ -1,14 +1,13 @@
 import * as React from "react"
-
-import "../components/Navigation"
+import ContactForm from '../components/ContactForm';
 
 
 
 const ContactPage = () => {
   return (
-    <main>
-  
-
+    <main className="container">
+        <h1 className="headersFont">Say hi.</h1>
+        <ContactForm></ContactForm>
     </main>
   )
 }

@@ -6,7 +6,7 @@ import Layout from "../components/app/Layout";
 const IndexPage = () => {
   return (
 
-  <main>
+  <main class="content container">
       
   
     <h1 className="firstIndexFont">HI. I'M TILLY JAY</h1>
