@@ -99,32 +99,7 @@
 }
 
 
-.triangle-border {
-  display: block;
-  position: absolute;
-  bottom: -7px; // Position off the bottom of the page
-  left: -4px;
-  width: 0;
-  height: 0;
-  border-top: 56px solid transparent; // Slightly larger than the actual triangle
-  border-bottom: 56px solid transparent; // Slightly larger than the actual triangle
-  border-right: 106px solid black; // Slightly larger than the actual triangle, with a border color
-  z-index: -100;
- }
 
-// triangles
-.triangle {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-right: 100px solid red;
-  z-index:-99;
- }
 
 
 .box {
@@ -325,3 +300,8 @@
  }
  
  
+.triangleContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
