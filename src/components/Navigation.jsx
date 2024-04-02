@@ -8,9 +8,10 @@ const Navigation = () => {
     {
       base: 100,
       height: 200,
-      fillColor: "#FFCC00",
-      borderColor: "blue"
-    },
+      fillColor: "#9C333E",
+      borderColor: "#1e130c"
+    }
+
   ]);
 
   const toggleMenu = () => {
@@ -29,7 +30,6 @@ const Navigation = () => {
                 fillColor={fillColor}
                 borderColor={borderColor}
                 index={index}
-  
               ></Triangle>
             ))}
           </div>
@@ -49,32 +49,32 @@ const Navigation = () => {
         <ul>
           <li>
             <div className="menu-item ">
-              <div className="circle"></div>
-              <Link to="/index">Home</Link>
+              <div className="circle" id="circle1"></div>
+              <Link id="indexLink" to="/index">Home</Link>
             </div>
           </li>
           <li>
             <div className="menu-item">
-              <div className="circle"></div>
-              <Link to="/portfolioexamples">Work</Link>
+              <div className="circle" id="circle2"></div>
+              <Link id="workLink" to="/portfolioexamples">Work</Link>
             </div>
           </li>
           <li>
             <div className="menu-item">
-              <div className="circle"></div>
-              <Link to="/skills">Resume</Link>
+              <div className="circle" id="circle3"></div>
+              <Link id="skillsLink" to="/skills">Resume</Link>
             </div>
           </li>
           <li>
             <div className="menu-item">
-              <div className="circle"></div>
-              <Link to="/contact">About</Link>
+              <div className="circle" id="circle4"></div>
+              <Link id="aboutLink" to="/about">About</Link>
             </div>
           </li>
           <li>
             <div className="menu-item">
-              <div className="circle"></div>
-              <Link to="/contact">Contact</Link>
+              <div className="circle" id="circle5"></div>
+              <Link id="contactLink" to="/contact">Contact</Link>
             </div>
           </li>
         </ul>

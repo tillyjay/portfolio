@@ -1,13 +1,13 @@
 import * as React from "react"
-
 import Layout from "../components/app/Layout";
+import '../styles/pagesStyles/indexPage.scss';
 
 
 const IndexPage = () => {
   return (
 
   <main class="content container">
-      
+
   
     <h1 className="firstIndexFont">HI. I'M TILLY JAY</h1>
     <h1 className="firstIndexFont">A</h1>

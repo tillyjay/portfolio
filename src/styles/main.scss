@@ -1,29 +1,44 @@
-/* Base Styles */
+//Base Styles
 @import 'baseStyles/reset';
 @import 'baseStyles/typography';
 
-/* Component Styles */
-@import '../styles/componentStyles/navigation.scss';
-@import '../styles/componentStyles/footer.scss';
-@import '../styles/componentStyles/contactForm.scss';
-@import '../styles/componentStyles/triangle.scss';
 
+//colours 
+$dark-red: #9C333E;
+$light-red: #B74855;
+$blue: #00ABC9;
+$gold: #FFC736;
+$light-grey: #E1E1E1;
+$dark-grey: #333333;
+$dark-brown: #1e130c;
+$black: #000000;
+$white: #ffffff;
+
+
+//fonts
 .firstIndexFont {
     font-family: $first-index-font;
-    color: #000;
+    color: $black;
 }
 
 .secondIndexFont {
     font-family: $second-index-font;
-    color: #000;
+    color: $black;
 }
 
 .headersFont {
     font-family: $headers-font;
-    color: #000;
+    color: $black;
 }
 
 .pTextFont {
     font-family: $p-text-font;
-    color: #000;
+    color: $black;
 }
+
+
+//Component Styles
+@import '../styles/componentStyles/navigation.scss';
+@import '../styles/componentStyles/footer.scss';
+@import '../styles/componentStyles/contactForm.scss';
+@import '../styles/componentStyles/triangle.scss';

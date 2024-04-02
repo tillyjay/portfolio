@@ -1,5 +1,6 @@
 //navigation
 
+
 .navigation {
   position: fixed;
   top: 0;
@@ -12,7 +13,6 @@
   justify-content: flex-start;
   z-index: 1000;
   overflow: hidden;
-  pointer-events: none;
 
   .overlay {
     position: fixed;
@@ -21,55 +21,42 @@
     width: 50vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: -10;
+    z-index: 998;
   }
 
   .menu-toggle {
     pointer-events: all;
-    position: absolute; 
-    top: 30px; 
-    right: 50px; 
+    position: absolute;
+    top: 30px;
+    right: 50px;
     cursor: pointer;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
+    z-index: 1001;
   }
 
   .menu-item {
     position: relative;
-    padding-left: 15px; 
-}
-   
-   .circle {
-    position: absolute;
-    left: -40px; 
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px; 
-    height: 40px;
-    border-radius: 50%;
-    background-color: red; 
-    border: 3px solid black;
+    padding-left: 15px;
+  }
 
-   }
-   
 
   .menu {
-    position: relative;
-    background-color: #333;
+    position: absolute;
     display: none;
-    width: 50vw; 
-    height: 100vh; 
-    z-index: -10;
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    padding: 20px; 
+    background-color: $dark-grey;
+    display: none;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
     margin: 0;
+    z-index: 999;
 
     ul {
       list-style: none;
@@ -77,14 +64,32 @@
 
       li {
         margin-top: 2rem;
-  
 
         a {
-          color: #fff;
+          color: $dark-brown;
           text-decoration: none;
-          font-size: 2rem;
-          font-family: $headers-font;
+          font-size: 2.1rem;
+          font-family: $second-index-font;
+          font-weight: bold;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: $white;
 
+          &#indexLink:hover {
+            color: $dark-red;
+          }
+          &#workLink:hover {
+            color: $blue;
+          }
+          &#skillsLink:hover {
+            color: $gold;
+          }
+          &#aboutLink:hover {
+            color: $dark-red;
+          }
+          &#contactLink:hover {
+            color: $blue;
+          }
+  
         }
       }
     }
@@ -94,14 +99,42 @@
     .menu {
       display: block;
     }
-
   }
 }
 
+//cicrcles 
+.circle {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid $black;
+}
 
+#circle1 {
+  background-color: $dark-red;
+}
 
+#circle2 {
+  background-color: $blue;
+}
 
+#circle3 {
+  background-color: $gold;
+}
 
+#circle4 {
+  background-color: $dark-red;
+}
+
+#circle5 {
+  background-color: $blue;
+}
+
+//nav button
 .box {
   border-radius: 2px;
   position: absolute;
@@ -111,11 +144,11 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #3faf82;
-  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
- }
- 
- .button {
+  background: $light-red;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button {
   width: 30px;
   height: 50px;
   position: absolute;
@@ -127,67 +160,65 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  
- }
+}
 
- div.box.active {
+div.box.active {
   width: 50px;
   height: 50px;
   border-radius: 50%;
- }
+}
 
- div.box.not-active .button {
+div.box.not-active .button {
   position: absolute;
   top: 28px;
   left: 28px;
- }
+}
 
- div.box.not-active span {
+div.box.not-active span {
   display: block;
-  width:80%;
+  width: 80%;
   height: 5px;
   margin-top: 7px;
- }
+}
 
- span {
+span {
   display: block;
   width: 100%;
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   height: 8px;
   background: #fff;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
- }
+}
 
- 
- span + span {
+span + span {
   margin-top: 14px;
- }
- 
- //animations 
- .active span:nth-child(1) {
-  animation: ease .7s top forwards;
+}
+
+//animations
+.active span:nth-child(1) {
+  animation: ease 0.7s top forwards;
 }
 
 .not-active span:nth-child(1) {
-  animation: ease .7s top-2 forwards;
+  animation: ease 0.7s top-2 forwards;
 }
 
 .active span:nth-child(2) {
-  animation: ease .7s scaled forwards;
+  animation: ease 0.7s scaled forwards;
 }
 
 .not-active span:nth-child(2) {
-  animation: ease .7s scaled-2 forwards;
+  animation: ease 0.7s scaled-2 forwards;
 }
 
 .active span:nth-child(3) {
-  animation: ease .7s bottom forwards;
+  animation: ease 0.7s bottom forwards;
 }
 
 .not-active span:nth-child(3) {
-  animation: ease .7s bottom-2 forwards;
+  animation: ease 0.7s bottom-2 forwards;
 }
 
 @keyframes top {
@@ -271,35 +302,28 @@
   }
 }
 
-
- 
-
-
-
-
-//media query 
+//media query
 @media (max-width: 500px) {
   .navigation {
-     .menu {
-       width: 70vw;
- 
-       ul {
-         li {
-              margin-top: 2rem;
-           a {
-             font-size: 2.2rem;
-           }
-         }
-       }
-     }
+    .menu {
+      width: 70vw;
 
-     .overlay {
-       width: 30vw;
-     }
+      ul {
+        li {
+          margin-top: 2rem;
+          a {
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+
+    .overlay {
+      width: 30vw;
+    }
   }
- }
- 
- 
+}
+
 .triangleContainer {
   position: absolute;
   bottom: 0;
