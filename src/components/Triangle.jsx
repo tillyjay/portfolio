@@ -4,9 +4,9 @@ const Triangle = ({ base, height, fillColor, borderColor, index}) => {
 
     const drawTriangle = (context) => {
         context.beginPath();
-        context.moveTo(0, 0); // Starting point
-        context.lineTo(base, 0); // Base of the triangle
-        context.lineTo(base / 2, height); // Height of the triangle
+        context.moveTo(0, 0); //starting point
+        context.lineTo(base, 0); //base of the triangle
+        context.lineTo(base / 2, height); //height of the triangle
         context.closePath();
     
         context.fillStyle = fillColor;

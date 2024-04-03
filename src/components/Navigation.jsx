@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import Triangle from "./triangle";
 
+import '../styles/componentStyles/triangleNavigation.scss';
+
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [arrayConfigs, setArrayConfigs] = useState([
