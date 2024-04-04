@@ -1,0 +1,79 @@
+//index circle styles 
+
+
+//small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {
+    .circleContainerSm {
+        display: block;
+    }
+
+    .circleContainerM {
+        display: none;
+    }
+
+    .circleContainerL {
+        display: none;
+    }
+
+    #circle1 {
+        position: absolute;
+        bottom: 90px;
+        left: 100px;
+        z-index: 9;
+
+    }
+
+    #circle2 {
+        position: absolute;
+        bottom: 90px;
+        left: 200px;
+        z-index: 9;
+    }
+
+    #testC {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border-radius:  50%;
+        border: 2px solid black;
+
+    }
+
+}
+
+//medium devices (tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {
+    .circleContainerSm {
+        display: none;
+    }
+
+    .circleContainerM {
+        display: block;
+    }
+
+    .circleContainerL {
+        display: none;
+    }
+}
+
+//extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {
+    .circleContainerSm {
+        display: none;
+    }
+
+    .circleContainerM {
+        display: none;
+    }
+
+    .circleContainerL {
+        display: block;
+    }
+
+    #circle1 {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+    }
+    
+}

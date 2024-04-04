@@ -2,7 +2,7 @@
   overflow: hidden;
   height: 100px;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 140px;
 }
 
 .foot {
@@ -18,11 +18,24 @@
 }
 
 .githubIcon {
-  width: 40px;
+  width: 60px;
 }
 
 .linkedIcon {
-  width: 40px;
+  width: 60px;
+}
+ 
+.signOff {
+  background-color: $gold;
+  padding: 10px;
+  height:60px;
+
+  border-radius: 10px;
+  border: 1px solid $black;
+}
+
+#signOffName {
+  padding-top:5px;
 }
 
 
@@ -45,6 +58,31 @@
 
   .unskew {
     transform: skewY(-7deg);
+  }
+
+  .iconsRow {
+    margin-bottom: -50px
+  }
+
+  .githubIcon {
+    width: 50px;
+  }
+
+  .linkedIcon {
+    width: 50px;
+  }
+
+  .signOff {
+    background-color: $gold;
+    padding: 5px;
+    height:50px;
+
+    border-radius: 10px;
+    border: 1px solid $black;
+  }
+
+  #signOffName {
+    padding-top:5px;
   }
 
  }

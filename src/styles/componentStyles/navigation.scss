@@ -114,23 +114,23 @@
   border: 2px solid $black;
 }
 
-#circle1 {
+#circleOne {
   background-color: $dark-red;
 }
 
-#circle2 {
+#circleTwo {
   background-color: $blue;
 }
 
-#circle3 {
+#circleThree {
   background-color: $gold;
 }
 
-#circle4 {
+#circleFour {
   background-color: $dark-red;
 }
 
-#circle5 {
+#circleFive {
   background-color: $blue;
 }
 
@@ -303,7 +303,7 @@ span + span {
 }
 
 //media query
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   .navigation {
     .menu {
       width: 70vw;
@@ -322,6 +322,16 @@ span + span {
       width: 30vw;
     }
   }
+
+
+}
+
+@media (max-width: 400px) {
+  .not-active {
+    position: absolute;
+    left: 50px;
+  }
+
 }
 
 .triangleContainer {

@@ -9,24 +9,26 @@ const Footer = () => {
             <div className="foot d-flex justify-content-start p-5">
                 <div className="unskew d-flex mt-3">
             <div className="circlesVertical">
-                <div className="circlesV"></div>
-                <div className="circlesV"></div>
-                <div className="circlesV"></div>
+                <div id="circleV1" className="circlesV"></div>
+                <div id="circleV2" className="circlesV"></div>
+                <div id="circleV3" className="circlesV"></div>
             </div>
-                <a className="me-3" href="https://www.linkedin.com/in/tilly-campbell/" target="_blank" rel="noopener noreferrer">
+            <div className="iconsRow d-flex">
+            <a className="me-3" href="https://www.linkedin.com/in/tilly-campbell/" target="_blank" rel="noopener noreferrer">
                 <StaticImage className="linkedIcon" src="../images/linkedinIcon.png"></StaticImage>
             </a>
             <a className="me-3" href="https://github.com/tillyjay" target="_blank" rel="noopener noreferrer">
                 <StaticImage className="githubIcon" src="../images/githubIcon.png"></StaticImage>
             </a>
-            <div className="d-flex-col text-center">
-            <div>tillyJay</div>
+            <div className="pTextFont text-center signOff">
+            <div id="signOffName">tillyJay</div>
             <div>2024</div>
             </div>
+            </div>
             <div className="circlesHorizontal">
-                <div className="circlesH"></div>
-                <div className="circlesH"></div>
-                <div className="circlesH"></div>
+                <div id="circle4" className="circlesH"></div>
+                <div id="circleV5" className="circlesH"></div>
+                <div id="circleV6" className="circlesH"></div>
             </div>
             </div>
             </div>
