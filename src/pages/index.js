@@ -90,21 +90,21 @@ const IndexPage = () => {
   //circle config small
   const [arrayConfigsCSm, setArrayConfigsCSm] = useState([
     {
-      radius: 300,
+      diameter: 300,
       fillColor: "#FFC736",
       borderColor: "#1e130c"
     },
     {
-      radius: 80,
+      diameter: 80,
       fillColor: "#00ABC9",
       borderColor: "#1e130c"
     }
   ]);
 
-  //circle config medium
+  // //circle config medium
   const [arrayConfigsCM, setArrayConfigsCM] = useState([
     {
-      radius: 30,
+      diameter: 30,
       fillColor: "#9C333E",
       borderColor: "#1e130c"
     }
@@ -113,7 +113,7 @@ const IndexPage = () => {
   //circle config large
   const [arrayConfigsCL, setArrayConfigsCL] = useState([
     {
-      radius: 30,
+      diameter: 30,
       fillColor: "#9C333E",
       borderColor: "#1e130c"
     }
@@ -168,9 +168,9 @@ const IndexPage = () => {
 
     {/* circle containers based on media query sizes */}
       <div className="circleContainerSm">
-              {arrayConfigsCSm.map(({ radius, fillColor, borderColor}, index) => (
+              {arrayConfigsCSm.map(({ diameter, fillColor, borderColor}, index) => (
                 <Circle 
-                  radius={radius}
+                diameter={diameter}
                   fillColor={fillColor}
                   borderColor={borderColor}
                   index={index}
@@ -179,9 +179,9 @@ const IndexPage = () => {
       </div>
 
       <div className="circleContainerM">
-              {arrayConfigsCM.map(({ radius, fillColor, borderColor}, index) => (
+              {arrayConfigsCM.map(({ diameter, fillColor, borderColor}, index) => (
                 <Circle 
-                  radius={radius}
+                  diameter={diameter}
                   fillColor={fillColor}
                   borderColor={borderColor}
                   index={index}
@@ -190,9 +190,9 @@ const IndexPage = () => {
       </div>
 
       <div className="circleContainerL">
-              {arrayConfigsCL.map(({ radius, fillColor, borderColor}, index) => (
+              {arrayConfigsCL.map(({ diameter, fillColor, borderColor}, index) => (
                 <Circle 
-                  radius={radius}
+                  diameter={diameter}
                   fillColor={fillColor}
                   borderColor={borderColor}
                   index={index}
