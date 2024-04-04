@@ -22,7 +22,7 @@ const IndexPage = () => {
       borderColor: "#1e130c"
     },
     {
-      base: 200,
+      base: 250,
       height: 300,
       fillColor: "#00ABC9",
       borderColor: "#1e130c"
@@ -90,18 +90,59 @@ const IndexPage = () => {
   //circle config small
   const [arrayConfigsCSm, setArrayConfigsCSm] = useState([
     {
-      diameter: 300,
+      diameter: 35,
+      fillColor: "#00ABC9",
+      borderColor: "#1e130c"
+    },
+    {
+      diameter: 50,
+      fillColor: "#00ABC9",
+      borderColor: "#1e130c"
+    },
+    {
+      diameter: 20,
       fillColor: "#FFC736",
       borderColor: "#1e130c"
     },
     {
-      diameter: 80,
-      fillColor: "#00ABC9",
+      diameter: 20,
+      fillColor: "#9C333E",
       borderColor: "#1e130c"
-    }
+    },
+    {
+      diameter: 20,
+      fillColor: "#9C333E",
+      borderColor: "#1e130c"
+    },
+    {
+      diameter: 20,
+      fillColor: "#9C333E",
+      borderColor: "#1e130c"
+    },
+    {
+      diameter: 40,
+      fillColor:  "#FFC736",
+      borderColor: "#1e130c"
+    },
+    {
+      diameter: 50,
+      fillColor:  "#FFC736",
+      borderColor: "#1e130c"
+    },
+    {
+      diameter: 50,
+      fillColor:  "#00ABC9",
+      borderColor: "#1e130c"
+    },
+    {
+      diameter: 50,
+      fillColor:  "#9C333E",
+      borderColor: "#1e130c"
+    },
+
   ]);
 
-  // //circle config medium
+  //circle config medium
   const [arrayConfigsCM, setArrayConfigsCM] = useState([
     {
       diameter: 30,
@@ -127,8 +168,17 @@ const IndexPage = () => {
     <h1 className="firstIndexFont hi">HEY. I'M </h1>
     <h1 className="firstIndexFont name">TILLY JAY</h1>
     <h1 className="firstIndexFont lgA">A</h1>
-    <h1 className="secondIndexFont webD">Web Dev</h1>
-<div id="testC"></div>
+    <h1 className="secondIndexFont web">web</h1>
+    <h1 className="secondIndexFont dev">dev</h1>
+
+    <div id="rect1"></div>
+    <div id="rect2"></div>
+    <div id="rect3"></div>
+
+    <div id="rect4"></div>
+    <div id="rect5"></div>
+    <div id="rect6"></div>
+
     {/* triangle containers based on media query sizes */}
     <div className="triangleContainerSm">
             {arrayConfigsTSm.map(({ base, height, fillColor, borderColor }, index) => (

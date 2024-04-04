@@ -5,7 +5,7 @@
 //small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {
   .triangleContainerSm {
-    display: block;
+    display: flex;
   }
 
   .triangleContainerM {
@@ -26,7 +26,7 @@
 
   #triangle2 {
     position: absolute;
-    bottom: -140px;
+    bottom: -135px;
     left: 0px;
     transform: rotate(-120deg);
     z-index: 9;
@@ -67,8 +67,8 @@
   #triangle7 {
     position: absolute;
     bottom: 450px;
-    left: 0px;
-    transform: rotate(-155deg);
+    left: 10px;
+    transform: rotate(-145deg);
     z-index: 4;
   }
 
@@ -79,6 +79,14 @@
     transform: rotate(-145deg);
     z-index: 3;
   }
+}
+
+@media screen and (max-height: 700px) and (max-width: 600px) {
+  .triangleContainerSm {
+  position: absolute;
+  top: 850px; 
+  }
+
 }
 
 //medium devices (tablets and large phones, 600px and up) 
@@ -110,3 +118,4 @@
     display: block;
   }
 }
+

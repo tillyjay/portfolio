@@ -18,6 +18,7 @@ $white: #ffffff;
     overflow: hidden;
     position: relative; 
     z-index: 1;
+    position: relative;
 }
 
 
@@ -26,15 +27,126 @@ $white: #ffffff;
         font-size: 3rem;
         transform: rotate(-90deg);
         position: absolute;
-        top: 110px;
-        left: -40px;
+        top: 90px;
+        left: -50px;
+        z-index: 10;
     }
 
     .name {
         font-size: 2.5rem;
         position: absolute;
-        top: 40px;
-        left: 90px;
+        top: 25px;
+        left: 80px;
+    }
+
+    .lgA {
+        font-size: 3rem;
+        position: absolute;
+        bottom: 25px;
+        left: 170px;
+        z-index: 10;
+    }
+
+    .web {
+        font-size: 4.5rem;
+        position: absolute;
+        bottom: 10px;
+        left: 200px;
+        z-index: 10;
+    }
+
+    .dev {
+        font-size: 4.5rem;
+        position: absolute;
+        bottom: 180px;
+        left: 290px;
+        transform: rotate(-90deg);
+    }
+
+    #rect1 {
+        display: block;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0px;
+        width: 80px;
+        height: 700px;
+        z-index: -1;
+        border-right: 1px solid black;
+    }
+
+    #rect2 {
+        display: block;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0px;
+        width: 300px;
+        height: 80px;
+        z-index: -1;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    #rect3 {
+        position: absolute;
+        background-color: #ffffff;
+        width: 100px;
+        height: 100px;
+        top: 60px;
+        left: -21px;
+    }
+
+    #rect4 {
+        position: absolute;
+        background-color: #ffffff;
+        width: 300px;
+        height: 65px;
+        bottom: -5px;
+        right: -5px;
+        border-top: 1px solid black;
+    }
+
+    #rect5 {
+        position: absolute;
+        background-color: #ffffff;
+        width: 100px;
+        height: 350px;
+        bottom: -5px;
+        right: -20px;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        z-index: -1;
+    }
+
+    #rect6 {
+        position: absolute;
+        background-color: #ffffff;
+        width: 100px;
+        height: 100px;
+        bottom: -30px;
+        right: -20px;
     }
 
 }
+
+@media screen and (max-height: 700px) and (max-width: 600px) {
+    .lgA {
+        position: absolute;
+        bottom: 30px;
+        left: 135px;
+    }
+
+    .web {
+        font-size: 4rem;
+        position: absolute;
+        bottom: 20px;
+        left: 180px;
+    }
+
+    .dev {
+        font-size: 4rem;
+        position: absolute;
+        bottom: 170px;
+        left: 270px;
+    }
+  
+  }

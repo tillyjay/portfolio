@@ -1,7 +1,6 @@
 
 import React from 'react';
 
-
 const Circle = ({ diameter, fillColor, borderColor, index }) => {
     const style = {
        width: `${diameter}px`,
@@ -13,6 +12,6 @@ const Circle = ({ diameter, fillColor, borderColor, index }) => {
 };
    
     return <div id={`circle${index + 1}`} style={style}></div>;
-   };
+};
    
-   export default Circle;
+export default Circle;
