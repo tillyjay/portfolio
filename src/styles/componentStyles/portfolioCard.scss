@@ -1,0 +1,41 @@
+
+
+@media screen and (max-width: 600px) {
+    .portfolioCard {
+        background-color: white;
+        width: 80%;
+        border: 3px solid;
+        border-radius: 20px;
+        padding: 15px;
+
+    }
+    
+    #workTitle {
+        font-family: $second-index-font;
+        font-size: 2rem;
+    }
+
+    .cardImage {
+        border: 3px solid;
+        border-radius:7px;
+    }
+     
+    .headers {
+        font-family: $second-index-font;
+        font-size: 1.4rem;
+    }
+
+    .para {
+       font-size: 1.2rem;
+       font-family: $p-text-font;
+    }
+
+    ul {
+        font-size: 1.2rem;
+        font-family: $p-text-font;
+    }
+
+
+
+
+}

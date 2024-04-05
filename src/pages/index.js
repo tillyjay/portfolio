@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Layout from "../components/app/Layout";
-import Triangle from "../components/triangle";
+import Triangle from "../components/Triangle";
 import Circle from "../components/Circle";
 
 
