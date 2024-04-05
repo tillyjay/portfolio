@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import Triangle from "./triangle";
+import Triangle from "./Triangle";
 
 import '../styles/componentStyles/triangleNavigation.scss';
 
@@ -52,7 +52,7 @@ const Navigation = () => {
           <li>
             <div className="menu-item ">
               <div className="circle" id="circleOne"></div>
-              <Link id="indexLink" to="/index">Home</Link>
+              <Link id="indexLink" to="/">Home</Link>
             </div>
           </li>
           <li>
