@@ -1,17 +1,15 @@
-main {
-  height: 100vh;
-}
+.contact-main {
+  .formDiv {
+    width: 100%;
+  }
 
-.formDiv {
-  width: 100%;
-}
-
-.sayHi {
-  font-size: 4.5rem;
-}
-
-@media screen and (max-width: 600px) {
   .sayHi {
-    margin-top: 30%;
+    font-size: 4.5rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    .sayHi {
+      margin-top: 30%;
+    }
   }
 }

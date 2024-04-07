@@ -1,9 +1,12 @@
+
+
 .footerBase {
-  overflow: hidden;
+  overflow: auto;
   height: 100px;
   padding-top: 120px;
   padding-bottom: 140px;
   background-color: #E1E1E1;
+  margin: 0;
 }
 
 .foot {
@@ -40,12 +43,15 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .footerBase {
-    overflow: hidden;
+    overflow: auto;
     height: 250px;
     padding-top: 120px;
     padding-bottom: 120px;
+    margin: 0;
+    background-color: #E1E1E1;
+    
   }
 
   .foot {

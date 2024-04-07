@@ -5,9 +5,6 @@ import Triangle from "../components/Triangle";
 import Circle from "../components/Circle";
 
 
-import '../styles/pagesStyles/triangleIndex.scss';
-import '../styles/pagesStyles/circleIndex.scss';
-import '../styles/pagesStyles/indexPage.scss';
 
 
 const IndexPage = () => {
@@ -163,7 +160,7 @@ const IndexPage = () => {
 
   return (
 
-  <main class="content">
+  <main class="index-main">
   
     <h1 className="firstIndexFont hi">HEY. I'M </h1>
     <h1 className="firstIndexFont name">TILLY JAY</h1>

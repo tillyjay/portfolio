@@ -4,21 +4,6 @@ import { graphql } from "gatsby";
 import PortfolioCard from "../components/PortfolioCard";
 // import Triangle from "../components/Triangle";
 
-import "../styles/pagesStyles/workPage.scss";
-
-
-// const projects = [
-//   {
-//     title: "My Project 1",
-//     image: "/images/ex2.png",
-//     blurb: "A short project description for project 1.",
-//     techUsed: ["HTML", "CSS", "JavaScript"],
-//     challenges: ["Challenge 1", "Challenge 2"],
-//     futureImprovements: ["Improvement 1", "Improvement 2"],
-//     borderColor: "#9C333E;",
-//     imageBorderColor: "#00ABC9",
-//   },
-// ];
 
 const WorkPage = ({ data }) => {
   // console.log(data.allMarkdownRemark.nodes);
@@ -30,10 +15,9 @@ const WorkPage = ({ data }) => {
   console.log(projects);
 
   return (
-    <main className="container d-flex justify-content-center align-items-center">
+    <main className="work-main container">
       {projects.map((project, index) => (
         <PortfolioCard
-          className="portfolioCard"
           key={index}
           title={project.title}
           image={project.image}

@@ -10,11 +10,11 @@ export default function Layout ({children, location }) {
     const showFooterCondition = location.pathname !== "/";
 
     return (
-        <div>
+        <>
           <Navigation />
             {children}
             {showFooterCondition && <Footer />} 
-        </div>
+        </>
     )
 }
 

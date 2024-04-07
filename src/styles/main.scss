@@ -1,45 +1,45 @@
 //Base Styles
-@import 'baseStyles/reset';
-@import 'baseStyles/typography';
-
-
-//colours 
-$dark-red: #9C333E;
-$light-red: #B74855;
-$blue: #00ABC9;
-$gold: #FFC736;
-$light-grey: #E1E1E1;
-$dark-grey: #333333;
-$dark-brown: #1e130c;
-$black: #000000;
-$white: #ffffff;
-
+@import "./baseStyles/reset.scss";
+@import './variables';
 
 //fonts
 .firstIndexFont {
-    font-family: $first-index-font;
-    color: $black;
+  font-family: $first-index-font;
+  color: $black;
 }
 
 .secondIndexFont {
-    font-family: $second-index-font;
-    color: $black;
+  font-family: $second-index-font;
+  color: $black;
 }
 
 .headersFont {
-    font-family: $headers-font;
-    color: $black;
+  font-family: $headers-font;
+  color: $black;
 }
 
 .pTextFont {
-    font-family: $p-text-font;
-    color: $black;
+  font-family: $p-text-font;
+  color: $black;
 }
 
+.container {
+  padding-left: calc(var(--bs-gutter-x) * 1.5);
+  padding-right: calc(var(--bs-gutter-x) * 1.5);
+}
 
 //Component Styles
-@import '../styles/componentStyles/navigation.scss';
-@import '../styles/componentStyles/contactForm.scss';
-@import '../styles/componentStyles/portfolioCard.scss';
-@import '../styles/componentStyles/footer.scss';
+@import "./componentStyles/navigation.scss";
+@import "./componentStyles/footer.scss";
+@import "./componentStyles/contactForm.scss";
+@import "./componentStyles/portfolioCard.scss";
+@import "./componentStyles/triangleNavigation.scss";
+
+
+@import "./pagesStyles/circleIndex.scss";
+@import "./pagesStyles/contactFormPage.scss";
+@import "./pagesStyles/indexPage.scss";
+@import "./pagesStyles/triangleWork.scss";
+@import "./pagesStyles/triangleIndex.scss";
+@import "./pagesStyles/workPage.scss";
 

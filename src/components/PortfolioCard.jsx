@@ -10,9 +10,9 @@ const PortfolioCard = ({
   borderColor,
   imageBorderColor
 }) => {
-  console.log(image);
+
   return (
-    <div className="portfolioCard" style={{ borderColor }}>
+    <div className="portfolioCard" style={{borderColor: borderColor }}>
       <h1 id="workTitle">{title}</h1>
       <div className="cardImage my-3 " style={{ borderColor: imageBorderColor }}>
         <img src={image} alt={title} />
@@ -45,6 +45,7 @@ const PortfolioCard = ({
         </ul>
       </div>
     </div>
+    
   );
 };
 

@@ -1,27 +1,15 @@
 
-//colours 
-$dark-red: #9C333E;
-$light-red: #B74855;
-$blue: #00ABC9;
-$gold: #FFC736;
-$light-grey: #E1E1E1;
-$dark-grey: #333333;
-$dark-brown: #1e130c;
-$black: #000000;
-$white: #ffffff;
 
 
-
-.content {
+.index-main {
     height: 100vh;
     background-color: #E1E1E1;
     overflow: hidden;
     position: relative; 
     z-index: 1;
     position: relative;
-}
 
-
+    
 @media only screen and (max-width: 600px) {
     .hi {
         font-size: 3rem;
@@ -150,3 +138,5 @@ $white: #ffffff;
     }
   
   }
+}
+

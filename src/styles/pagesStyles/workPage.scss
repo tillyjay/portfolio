@@ -1,8 +1,11 @@
-main {
-    height: 100vh;
-    background-color: #E1E1E1;
+.work-main {
+
+  background-color: $light-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+@media screen and (max-width: 600px) {
+
+
 }
-  
-.portfolioCard {
-  z-index: 10;
 }

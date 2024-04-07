@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Versailles';
+    src: url('../fonts/Versailles.ttf') format('truetype');
+    }
+    
+    @font-face {
+    font-family: 'TanBuster';
+    src: url('../fonts/Tan-Buster.otf') format('opentype');
+    }
+    
+    @font-face {
+    font-family: 'Fabrica';
+    src: url('../fonts/Fabrica.ttf') format('truetype');
+    }
+    
+    @font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    }
+    
+    //variables
+    $first-index-font: 'Versailles', sans-serif;
+    $second-index-font: 'TanBuster', sans-serif;
+    $headers-font: 'Fabrica', sans-serif;
+    $p-text-font: 'Inter-Regular', sans-serif;
+
+
+    
+    
+
+//colours 
+$dark-red: #9C333E;
+$light-red: #B74855;
+$blue: #00ABC9;
+$gold: #FFC736;
+$light-grey: #E1E1E1;
+$dark-grey: #333333;
+$dark-brown: #1e130c;
+$black: #000000;
+$white: #ffffff;
