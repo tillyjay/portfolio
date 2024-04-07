@@ -58,7 +58,7 @@ const Navigation = () => {
           <li>
             <div className="menu-item">
               <div className="circle" id="circleTwo"></div>
-              <Link id="workLink" to="/portfolioexamples">Work</Link>
+              <Link id="workLink" to="/work">Work</Link>
             </div>
           </li>
           <li>

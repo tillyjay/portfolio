@@ -8,10 +8,8 @@ This file holds content for the portfolio examples
 ## Portfolio v.1 Example
 title: "Portfolio"
 blurb: "My first portfolio site serves as a basic showcase of my work, providing visitors with insight into my skills. It includes work samples, resume, about me, and contact form sections."
-techUsed:
-    - "CSS (Flexbox for layout)"
-    - "JavaScript"
-    - "Php"
+techUsed:["CSS (Flexbox for layout)", "JavaScript", "Php"]
+
 challenges: 
     - "Making the website responsive using pure CSS challenged me with the various breakpoints, media queries and absolute positioning."
 futureImprovements:
