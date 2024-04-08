@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Footer = () => {  
 
     return (
-        <footer>
+        <footer className="footer-main">
             <div className="footerBase">
             <div className="foot d-flex justify-content-start p-5">
                 <div className="unskew d-flex mt-3">
@@ -14,10 +14,10 @@ const Footer = () => {
                 <div id="circleV3" className="circlesV"></div>
             </div>
             <div className="iconsRow d-flex">
-            <a className="me-3" href="https://www.linkedin.com/in/tilly-campbell/" target="_blank" rel="noopener noreferrer">
+            <a className="iconLinks me-3" href="https://www.linkedin.com/in/tilly-campbell/" target="_blank" rel="noopener noreferrer">
                 <StaticImage className="linkedIcon" src="../images/linkedinIcon.png"></StaticImage>
             </a>
-            <a className="me-3" href="https://github.com/tillyjay" target="_blank" rel="noopener noreferrer">
+            <a className="iconLinks me-3" href="https://github.com/tillyjay" target="_blank" rel="noopener noreferrer">
                 <StaticImage className="githubIcon" src="../images/githubIcon.png"></StaticImage>
             </a>
             <div className="pTextFont text-center signOff">

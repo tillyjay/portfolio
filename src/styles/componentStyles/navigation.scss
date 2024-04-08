@@ -12,6 +12,7 @@
   justify-content: flex-start;
   z-index: 1000;
   overflow: hidden;
+  pointer-events: none;
 
   .overlay {
     position: fixed;
@@ -56,6 +57,7 @@
     padding: 20px;
     margin: 0;
     z-index: 999;
+    pointer-events: all;
 
     ul {
       list-style: none;
