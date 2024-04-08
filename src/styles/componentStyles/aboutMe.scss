@@ -1,0 +1,31 @@
+
+.aboutMeCard {
+
+
+    @media screen and (max-width: 600px) {
+        
+            background-color: $white;
+            border: 3px solid $blue;
+            border-radius: 20px;
+            padding: 15px;
+
+        
+        #aboutTitle {
+            margin-top: 1rem;
+            font-family: $second-index-font;
+            font-size: 1.5rem;
+        }
+
+        .para {
+            font-size: .9rem;
+            font-family: $p-text-font;
+          }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+
+
+    }
+}

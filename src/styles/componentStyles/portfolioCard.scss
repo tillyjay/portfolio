@@ -1,13 +1,13 @@
-
+.portfolioCard {
 
 @media screen and (max-width: 600px) {
-  .portfolioCard {
+
     background-color: white;
     border: 3px solid;
     border-radius: 20px;
     padding: 15px;
     margin-top: 6rem;
-  }
+  
 
   #workTitle {
     margin-top: 1rem;
@@ -47,4 +47,5 @@
     padding-left: 0px;
     list-style-type: circle;
   }
+}
 }

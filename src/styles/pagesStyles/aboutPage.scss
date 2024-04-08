@@ -1,0 +1,16 @@
+
+.about-main {
+
+
+    @media screen and (max-width: 600px) {
+
+        background-color: $light-grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+        
+    }
+
+}

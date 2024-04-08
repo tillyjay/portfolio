@@ -15,10 +15,10 @@ const Footer = () => {
             </div>
             <div className="iconsRow d-flex">
             <a className="iconLinks me-3" href="https://www.linkedin.com/in/tilly-campbell/" target="_blank" rel="noopener noreferrer">
-                <StaticImage className="linkedIcon" src="../images/linkedinIcon.png"></StaticImage>
+                <StaticImage className="linkedIcon" src="../images/linkedinIcon.png" alt="LinkedIn Icon"></StaticImage>
             </a>
             <a className="iconLinks me-3" href="https://github.com/tillyjay" target="_blank" rel="noopener noreferrer">
-                <StaticImage className="githubIcon" src="../images/githubIcon.png"></StaticImage>
+                <StaticImage className="githubIcon" src="../images/githubIcon.png" alt="Github Icon"></StaticImage>
             </a>
             <div className="pTextFont text-center signOff">
             <div id="signOffName">tillyJay</div>
