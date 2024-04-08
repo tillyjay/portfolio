@@ -5,17 +5,16 @@ import AboutMeCard from "../components/AboutMeCard";
 
 const AboutPage = ({ data }) => {
 
-  const about = data.allMarkdownRemark.nodes.map(({ frontmatter, html }) => ({
-    ...frontmatter, html
-  }));
-  console.log(about);
+  const about = data;
+  const title = data.markdownRemark.frontmatter.title;
+  const html = data.markdownRemark.html;
 
 
   return (
     <main className="about-main container">
       <AboutMeCard 
-        title={about[0].title}
-        blurb={about[0].html}
+        title={title}
+        blurb={html}
        />
     </main>
   );
@@ -23,15 +22,14 @@ const AboutPage = ({ data }) => {
 
 export const aboutPageQuery = graphql`
 query MyQuery {
-  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "//pages//"}}) {
-    nodes {
+  markdownRemark(fileAbsolutePath: {regex: "//pages/aboutMe-card.md/"}) {
+
       frontmatter {
         title
       }
       html
     }
   }
-}
 `;
 
 
