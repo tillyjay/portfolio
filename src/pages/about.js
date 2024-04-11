@@ -9,7 +9,6 @@ const AboutPage = ({ data }) => {
   const title = data.markdownRemark.frontmatter.title;
   const html = data.markdownRemark.html;
 
-
   return (
     <main className="about-main container">
       <AboutMeCard 

@@ -6,7 +6,7 @@ const Triangle = ({ base, height, fillColor, borderColor, index}) => {
         context.beginPath();
         context.moveTo(0, 0); //starting point
         context.lineTo(base, 0); //base of the triangle
-        context.lineTo(base / 2, height); //height of the triangle
+        context.lineTo(base / 2, height); //height of triangle
         context.closePath();
     
         context.fillStyle = fillColor;

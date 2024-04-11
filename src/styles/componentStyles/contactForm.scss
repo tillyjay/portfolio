@@ -5,9 +5,9 @@
   align-items: center;
   background-color: $light-grey;
 
+
 .contactform {
-  background-color: aquamarine;
-  width: 80%;
+  width: 100%;
   padding-bottom: 80px;
   margin-bottom: 100px;
 
@@ -21,13 +21,50 @@
   width: 100%;
   box-sizing: border-box;
   align-self: center;
+  border-radius: 15px;
+  height: 3rem;
+  font-family: $p-text-font;
+  border: 2px solid $dark-brown;
 }
+
+input#inputName:focus {
+  border-color: #9C333E;
+}
+
+#inputBlockMessage {
+  height: 13rem;
+  border-radius: 20px;
+  border: 2px solid $dark-brown;
+}
+
 
 .buttonSubmit {
     position: absolute;
-    top: 105%;
+    top: 98%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    border: 2px solid $dark-brown;
+    background-color: $light-red;
 }
+
+
+#triangle1 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  transform: rotate(-105deg);
+  z-index: 9;
+}
+
+#triangle2 {
+  position: absolute;
+  bottom: 9px;
+  left: 15px;
+  transform: rotate(107deg);
+  z-index: 10;
+}
+
 }
