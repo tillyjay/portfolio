@@ -36,5 +36,17 @@ module.exports = {
         path: `${__dirname}/markdown`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Portfolio",
+        short_name: "Portflio",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#000000",
+        display: "minimal-ui",
+        icon: "src/images/favicon.png", 
+    },
+    },
   ],
 };
