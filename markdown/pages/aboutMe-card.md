@@ -2,7 +2,7 @@
 title: "About Me"
 ---
 
-*Record Scratch  skdfnjsdkf* *Freeze Frame* Yep, that’s me, Tilly Jay Campbell. You’re probably wondering how I ended up in this situation. Let’s rewind 29 years. I was one of those rare millennials who grew up without the internet or even video games, but man was I ever on good terms with the local librarians. So how did I become interested in tech? That comes later.
+*Record Scratch* *Freeze Frame* Yep, that’s me, Tilly Jay Campbell. You’re probably wondering how I ended up in this situation. Let’s rewind 29 years. I was one of those rare millennials who grew up without the internet or even video games, but man was I ever on good terms with the local librarians. So how did I become interested in tech? That comes later.
 
 Let’s skip grade school and jump to post university, where I would spend the better part of the next decade travelling and working as I went along. Some call it wanderlust, others call it bad planning. Either way, it forced my innately introverted self to develop certain interpersonal skills such as effective communication, collaboration, and empathy. In hindsight, my personal development will always be grateful.
 
