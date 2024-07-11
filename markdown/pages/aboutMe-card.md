@@ -9,3 +9,5 @@ Let’s skip grade school and jump to post university, where I would spend the b
 Fast-forward to 26. I’m working a job I love as an assistant for people with intellectual disabilities, but in terms of a career, I felt lost. Que stumbling across a basic HTML/CSS course, and the fascination that came with it.
 
 Soon after, I made the decision to apply to NSCC’s IT web development program, and here we are. Highlights of my education so far have been spending 9 hours to automate a 1-minute task… In all seriousness, though, I’ve become passionate about programming, and in particular the aspect of UI. My work is by no means pixel perfect, but I’m stoked about continuously  improving my skills, and the avenues they may open.
+
+This is an update
