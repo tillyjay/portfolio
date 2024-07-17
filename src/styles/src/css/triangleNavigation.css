@@ -1,0 +1,6 @@
+#triangle1 {
+  position: absolute;
+  bottom: 100px;
+  left: -10px;
+  transform: rotate(-135deg);
+}
