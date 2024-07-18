@@ -1,5 +1,5 @@
 ---
-title: "Portfolio v.1 Example"
+title: "Portfolio v.1"
 blurb: "My first portfolio site serves as a basic showcase of my work, providing visitors with insight into my skills. It includes work samples, resume, about me, and contact form sections."
 image: "/images/ex1.png"
 techUsed: [

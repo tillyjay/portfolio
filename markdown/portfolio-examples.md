@@ -5,7 +5,7 @@ This file holds content for the portfolio examples
 --
 
 --
-## Portfolio v.1 Example
+## Portfolio v.1
 title: "Portfolio"
 blurb: "My first portfolio site serves as a basic showcase of my work, providing visitors with insight into my skills. It includes work samples, resume, about me, and contact form sections."
 techUsed:["CSS (Flexbox for layout)", "JavaScript", "Php"]
