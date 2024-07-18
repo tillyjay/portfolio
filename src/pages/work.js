@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 
 import PortfolioCard from "../components/PortfolioCard";
-// import Triangle from "../components/Triangle";
+import Triangle from "../components/Triangle";
 
 
 const WorkPage = ({ data }) => {
@@ -12,10 +12,38 @@ const WorkPage = ({ data }) => {
     ...frontmatter,
   }));
 
-  console.log(projects);
+  // console.log(projects);
+
+  //triangle configs
+  //triangle configs small
+  const [arrayConfigsTSmW, setArrayConfigsTSmW] = useState([
+    {
+      base: 80,
+      height: 120,
+      fillColor: "#9C333E",
+      borderColor: "#1e130c"
+    },
+  ]);
+
+
 
   return (
     <main className="work-main container">
+
+    {/* triangle containers based on media query sizes */}
+    <div className="triangleContainerSmW">
+            {arrayConfigsTSmW.map(({ base, height, fillColor, borderColor }, index) => (
+              <Triangle
+                base={base}
+                height={height}
+                fillColor={fillColor}
+                borderColor={borderColor}
+                index={index}
+                pageType='W' //indicate WorkPage
+              />
+            ))}
+      </div>
+
       {projects.map((project, index) => (
         <PortfolioCard
           key={index}

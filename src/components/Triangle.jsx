@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Triangle = ({ base, height, fillColor, borderColor, index}) => {
+const Triangle = ({ base, height, fillColor, borderColor, index, pageType }) => {
 
     const drawTriangle = (context) => {
         context.beginPath();
@@ -17,9 +17,12 @@ const Triangle = ({ base, height, fillColor, borderColor, index}) => {
         context.stroke();
      };
     
+    //construct id based on pageType and index
+    const triangleId = `triangle${pageType}${index + 1}`;
+     
      return (
-    <div id={`triangle${index + 1}`}>
-     <canvas className="triangle" ref={canvas => canvas && drawTriangle(canvas.getContext('2d'))} width={base} height={height} />
+    <div id={triangleId}>
+        <canvas className="triangle" ref={canvas => canvas && drawTriangle(canvas.getContext('2d'))} width={base} height={height} />
     </div>
      );
     

@@ -185,6 +185,7 @@ const IndexPage = () => {
                 fillColor={fillColor}
                 borderColor={borderColor}
                 index={index}
+                pageType='I' //indicate IndexPage
               ></Triangle>
             ))}
       </div>
@@ -248,9 +249,6 @@ const IndexPage = () => {
       </div>
 
     </main>
-          
-
-
   )
 }
 

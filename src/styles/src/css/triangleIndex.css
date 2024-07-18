@@ -1,19 +1,13 @@
-//index triangle styles 
-
-//small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {
   .triangleContainerSm {
     display: flex;
   }
-
   .triangleContainerM {
     display: none;
   }
-
   .triangleContainerL {
     display: none;
   }
-
   #triangleI1 {
     position: absolute;
     bottom: -40px;
@@ -21,7 +15,6 @@
     transform: rotate(-145deg);
     z-index: 10;
   }
-
   #triangleI2 {
     position: absolute;
     bottom: -135px;
@@ -29,7 +22,6 @@
     transform: rotate(-120deg);
     z-index: 9;
   }
-
   #triangleI3 {
     position: absolute;
     bottom: 80px;
@@ -37,7 +29,6 @@
     transform: rotate(-140deg);
     z-index: 8;
   }
-
   #triangleI4 {
     position: absolute;
     bottom: 270px;
@@ -45,7 +36,6 @@
     transform: rotate(-125deg);
     z-index: 7;
   }
-
   #triangleI5 {
     position: absolute;
     bottom: -10px;
@@ -53,7 +43,6 @@
     transform: rotate(-145deg);
     z-index: 6;
   }
-
   #triangleI6 {
     position: absolute;
     bottom: 120px;
@@ -61,7 +50,6 @@
     transform: rotate(-135deg);
     z-index: 5;
   }
-
   #triangleI7 {
     position: absolute;
     bottom: 450px;
@@ -69,7 +57,6 @@
     transform: rotate(-145deg);
     z-index: 4;
   }
-
   #triangleI8 {
     position: absolute;
     bottom: 250px;
@@ -78,42 +65,31 @@
     z-index: 3;
   }
 }
-
 @media screen and (max-height: 700px) and (max-width: 600px) {
   .triangleContainerSm {
-  position: absolute;
-  top: 850px; 
+    position: absolute;
+    top: 850px;
   }
-
 }
-
-//medium devices (tablets and large phones, 600px and up) 
 @media only screen and (min-width: 600px) {
   .triangleContainerSm {
     display: none;
   }
-
   .triangleContainerM {
     display: block;
   }
-
   .triangleContainerL {
     display: none;
   }
 }
-
-//extra large devices (large laptops and desktops, 1200px and up) 
 @media only screen and (min-width: 1200px) {
   .triangleContainerSm {
     display: none;
   }
-
   .triangleContainerM {
     display: none;
   }
-
   .triangleContainerL {
     display: block;
   }
 }
-
