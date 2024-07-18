@@ -198,6 +198,7 @@ const IndexPage = () => {
                 fillColor={fillColor}
                 borderColor={borderColor}
                 index={index}
+                pageType='I'
               ></Triangle>
             ))}
       </div>
@@ -210,6 +211,7 @@ const IndexPage = () => {
                 fillColor={fillColor}
                 borderColor={borderColor}
                 index={index}
+                pageType='I'
               ></Triangle>
             ))}
       </div>
@@ -222,6 +224,7 @@ const IndexPage = () => {
                   fillColor={fillColor}
                   borderColor={borderColor}
                   index={index}
+                  pageType='I' //indicate IndexPage
                 ></Circle>
               ))}
       </div>
@@ -233,6 +236,7 @@ const IndexPage = () => {
                   fillColor={fillColor}
                   borderColor={borderColor}
                   index={index}
+                  pageType='I'
                 ></Circle>
               ))}
       </div>
@@ -244,6 +248,7 @@ const IndexPage = () => {
                   fillColor={fillColor}
                   borderColor={borderColor}
                   index={index}
+                  pageType='I'
                 ></Circle>
               ))}
       </div>
