@@ -18,11 +18,36 @@ const WorkPage = ({ data }) => {
   //triangle configs small
   const [arrayConfigsTSmW, setArrayConfigsTSmW] = useState([
     {
-      base: 80,
-      height: 120,
+      base: 180,
+      height: 280,
       fillColor: "#9C333E",
       borderColor: "#1e130c"
     },
+    {
+      base: 220,
+      height: 260,
+      fillColor: "#00ABC9",
+      borderColor: "#1e130c"
+    },
+    {
+      base: 60,
+      height: 140,
+      fillColor: "#00ABC9",
+      borderColor: "#1e130c"
+    },
+    {
+      base: 60,
+      height: 140,
+      fillColor: "#FFC736",
+      borderColor: "#1e130c"
+    },
+    {
+      base: 150,
+      height: 200,
+      fillColor: "#9C333E",
+      borderColor: "#1e130c"
+    },
+
   ]);
 
 

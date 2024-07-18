@@ -4,14 +4,47 @@
 @media only screen and (max-width: 600px) {
     .triangleContainerSmW {
         display: flex;
+
       }
 
       #triangleW1 {
         position: absolute;
-        top: 0px;
-        left: 0px;
-        transform: rotate(5deg);
+        top: -95px;
+        left: -50px;
+        transform: rotate(35deg);
         z-index: 10;
+      }
+
+      #triangleW2 {
+        position: absolute;
+        top: -95px;
+        left: -50px;
+        transform: rotate(-55deg);
+        z-index: 11;
+      }
+
+      #triangleW3 {
+        position: absolute;
+        top: 800px;
+        right: 10px;
+        transform: rotate(125deg);
+        z-index: 10;
+      }
+
+      #triangleW4 {
+        position: absolute;
+        top: 800px;
+        right: 10px;
+        transform: rotate(90deg);
+        z-index: 11;
+      }
+
+      #triangleW5 {
+        position: absolute;
+        top: 830px;
+        right: -40px;
+        transform: rotate(55deg);
+        z-index: 9;
       }
 
 }
