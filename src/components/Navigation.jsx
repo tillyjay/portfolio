@@ -32,6 +32,7 @@ const Navigation = () => {
                 fillColor={fillColor}
                 borderColor={borderColor}
                 index={index}
+                pageType='N'
               ></Triangle>
             ))}
           </div>
