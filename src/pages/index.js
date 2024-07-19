@@ -257,5 +257,12 @@ const IndexPage = () => {
   )
 }
 
+export const Head = () => (
+  <>
+    <title>Tilly Jay Portfolio Home</title>
+    <meta name="description" content="Portfolio home page with a Bauhaus inspired design." />
+  </>
+)
+
 export default IndexPage
 

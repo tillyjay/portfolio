@@ -105,4 +105,12 @@ export const projectsPageQuery = graphql`
   }
 `;
 
+export const Head = () => (
+  <>
+    <title>Work Examples</title>
+    <meta name="description" content="Examples of past projects describing their purpose,
+                                       tech stack, challenges, and future improvements." />
+  </>
+)
+
 export default WorkPage;

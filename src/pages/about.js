@@ -32,4 +32,11 @@ query MyQuery {
 `;
 
 
+export const Head = () => (
+  <>
+    <title>About Me</title>
+    <meta name="description" content="Get to know me better with a little bit of back story." />
+  </>
+)
+
 export default AboutPage;

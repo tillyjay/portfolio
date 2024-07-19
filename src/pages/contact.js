@@ -14,4 +14,12 @@ const ContactPage = () => {
   )
 }
 
+
+export const Head = () => (
+  <>
+    <title>Contact</title>
+    <meta name="description" content="Send me a message and let's chat!" />
+  </>
+)
+
 export default ContactPage

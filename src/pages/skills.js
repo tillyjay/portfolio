@@ -11,4 +11,12 @@ const SkillsPage = () => {
   )
 }
 
+
+export const Head = () => (
+  <>
+    <title>Skills</title>
+    <meta name="description" content="Skills and how long I've been developing each skill." />
+  </>
+)
+
 export default SkillsPage
