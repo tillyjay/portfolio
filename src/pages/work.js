@@ -6,13 +6,10 @@ import Triangle from "../components/Triangle";
 
 
 const WorkPage = ({ data }) => {
-  // console.log(data.allMarkdownRemark.nodes);
 
   const projects = data.allMarkdownRemark.nodes.map(({ frontmatter }) => ({
     ...frontmatter,
   }));
-
-  // console.log(projects);
 
   //triangle configs
   //triangle configs small
