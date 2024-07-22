@@ -67,6 +67,7 @@ const WorkPage = ({ data }) => {
       </div>
 
       {projects.map((project, index) => (
+        <div >
         <PortfolioCard
           key={index}
           title={project.title}
@@ -78,6 +79,7 @@ const WorkPage = ({ data }) => {
           borderColor={project.borderColor}
           imageBorderColor={project.imageBorderColor}
         />
+        </div>
       ))}
     </main>
   );
