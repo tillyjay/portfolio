@@ -51,23 +51,38 @@ const WorkPage = ({ data }) => {
 
   return (
     <main className="work-main container">
-    
-      <div className="card-view">
-      <div id="section1"></div>
-      <div id="section2"></div>
+  
+    {/* triangle containers based on media query sizes */}
+    {/* <div className="triangleContainerSmW">
+            {arrayConfigsTSmW.map(({ base, height, fillColor, borderColor }, index) => (
+              <Triangle
+                base={base}
+                height={height}
+                fillColor={fillColor}
+                borderColor={borderColor}
+                index={index}
+                pageType='W' //indicate WorkPage
+              />
+            ))}
+      </div> */}
+   
+
       {projects.map((project, index) => {
-  //check if index is within bounds of arrayConfigsTSmW
+  // Check if the index is within the bounds of arrayConfigsTSmW
   if (index < arrayConfigsTSmW.length) {
     return (
       <React.Fragment key={index}>
-        <Triangle
-          base={arrayConfigsTSmW[index].base}
-          height={arrayConfigsTSmW[index].height}
-          fillColor={arrayConfigsTSmW[index].fillColor}
-          borderColor={arrayConfigsTSmW[index].borderColor}
-          index={index}
-          pageType='W'
-        />     
+      <div className="card-view">
+
+      <Triangle
+        base={arrayConfigsTSmW[index].base}
+        height={arrayConfigsTSmW[index].height}
+        fillColor={arrayConfigsTSmW[index].fillColor}
+        borderColor={arrayConfigsTSmW[index].borderColor}
+        index={index}
+        pageType='W'
+      />  
+
 
         <PortfolioCard
           title={project.title}
@@ -79,15 +94,15 @@ const WorkPage = ({ data }) => {
           borderColor={project.borderColor}
           imageBorderColor={project.imageBorderColor}
         />
-
+    </div>
       </React.Fragment>
-      );
-    }
-    //return null or a placeholder component 
-    return null; 
-    })}
+    );
+  }
+  // Optionally, return null or a placeholder component if there's no matching configuration
+  return null; // or <PlaceholderComponent />;
+})}
 
-      </div>
+  
     </main>
   );
 };
