@@ -66,7 +66,8 @@ const WorkPage = ({ data }) => {
             ))}
       </div> */}
    
-      <div>
+      <div className="card-view">
+
       <div id="section1"></div>
       <div id="section2"></div>
       {projects.map((project, index) => {
@@ -74,15 +75,17 @@ const WorkPage = ({ data }) => {
   if (index < arrayConfigsTSmW.length) {
     return (
       <React.Fragment key={index}>
+<div className="triangleContainerSmW">
+      <Triangle
+        base={arrayConfigsTSmW[index].base}
+        height={arrayConfigsTSmW[index].height}
+        fillColor={arrayConfigsTSmW[index].fillColor}
+        borderColor={arrayConfigsTSmW[index].borderColor}
+        index={index}
+        pageType='W'
+      />
 
-        <Triangle
-          base={arrayConfigsTSmW[index].base}
-          height={arrayConfigsTSmW[index].height}
-          fillColor={arrayConfigsTSmW[index].fillColor}
-          borderColor={arrayConfigsTSmW[index].borderColor}
-          index={index}
-          pageType='W'
-        />
+        </div>
 
         <PortfolioCard
           title={project.title}
@@ -94,7 +97,7 @@ const WorkPage = ({ data }) => {
           borderColor={project.borderColor}
           imageBorderColor={project.imageBorderColor}
         />
-        
+
       </React.Fragment>
     );
   }
