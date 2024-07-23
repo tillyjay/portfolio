@@ -6,7 +6,7 @@
     //     display: flex;
     //   }
 
-    #triangleW1 {
+    .card-view1  #triangleW1 {
         position: absolute;
         top: -105px;
         left: -50px;
@@ -14,9 +14,9 @@
         z-index: 10;
       }
 
-    #triangleW2 {
+    .card-view1 #triangleW2 {
         position: absolute;
-        top: -125px;
+        top: 0px;
         left: -50px;
         transform: rotate(-55deg);
         z-index: 11;
