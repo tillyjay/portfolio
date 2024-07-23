@@ -51,7 +51,7 @@ const WorkPage = ({ data }) => {
 
   return (
     <main className="work-main container">
-
+  
     {/* triangle containers based on media query sizes */}
     <div className="triangleContainerSmW">
             {arrayConfigsTSmW.map(({ base, height, fillColor, borderColor }, index) => (
@@ -65,9 +65,11 @@ const WorkPage = ({ data }) => {
               />
             ))}
       </div>
-
+   
+      <div>
+      <div id="section1"></div>
+      <div id="section2"></div>
       {projects.map((project, index) => (
-        <div >
         <PortfolioCard
           key={index}
           title={project.title}
@@ -79,8 +81,8 @@ const WorkPage = ({ data }) => {
           borderColor={project.borderColor}
           imageBorderColor={project.imageBorderColor}
         />
-        </div>
       ))}
+      </div>
     </main>
   );
 };
