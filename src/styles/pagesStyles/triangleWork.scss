@@ -6,7 +6,7 @@
     //     display: flex;
     //   }
 
-      #triangleW1 {
+     #triangleW1 {
         position: absolute;
         top: -105px;
         left: -50px;
@@ -16,15 +16,15 @@
 
     #triangleW2 {
         position: absolute;
-        top: 10px;
+        top: -100px;
         left: -50px;
         transform: rotate(-55deg);
         z-index: 11;
       }
 
-       #triangleW3 {
+     #triangleW3 {
         position: absolute;
-        top: 758px;
+        top: 0px;
         right: 10px;
         transform: rotate(125deg);
         z-index: 10;
@@ -32,7 +32,7 @@
 
        #triangleW4 {
         position: absolute;
-        top: 780px;
+        top: 0px;
         right: 10px;
         transform: rotate(90deg);
         z-index: 11;
@@ -40,7 +40,7 @@
 
       #triangleW5 {
         position: absolute;
-        top: 780px;
+        top: 0px;
         right: -40px;
         transform: rotate(55deg);
         z-index: 9;

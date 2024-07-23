@@ -50,7 +50,7 @@ const WorkPage = ({ data }) => {
 
 
   return (
-    <main className="work-main container">
+    <main className="work-main ">   
 
       {projects.map((project, index) => {
   // Check if index is within bounds of arrayConfigsTSmW
@@ -59,8 +59,8 @@ const WorkPage = ({ data }) => {
     const cardViewClass = `card-view${index + 1}`;
     return (
       <React.Fragment key={index}>
-   <div className={`card-view${cardViewClass}`} index={index}>
-
+   <div className={`card-view ${cardViewClass}`} index={index}>
+ {/* map of array with fixed width*/}
       <Triangle
         base={arrayConfigsTSmW[index].base}
         height={arrayConfigsTSmW[index].height}
@@ -70,7 +70,7 @@ const WorkPage = ({ data }) => {
         pageType='W'
       />  
 
-
+    <div className="container">
         <PortfolioCard
           title={project.title}
           image={project.image}
@@ -81,12 +81,12 @@ const WorkPage = ({ data }) => {
           borderColor={project.borderColor}
           imageBorderColor={project.imageBorderColor}
         />
+        </div>
     </div>
       </React.Fragment>
     );
   }
-  
-  return null; 
+    return null; 
 })}
 
   
