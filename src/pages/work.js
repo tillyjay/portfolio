@@ -53,7 +53,7 @@ const WorkPage = ({ data }) => {
     <main className="work-main container">
   
     {/* triangle containers based on media query sizes */}
-    <div className="triangleContainerSmW">
+    {/* <div className="triangleContainerSmW">
             {arrayConfigsTSmW.map(({ base, height, fillColor, borderColor }, index) => (
               <Triangle
                 base={base}
@@ -64,14 +64,27 @@ const WorkPage = ({ data }) => {
                 pageType='W' //indicate WorkPage
               />
             ))}
-      </div>
+      </div> */}
    
       <div>
       <div id="section1"></div>
       <div id="section2"></div>
-      {projects.map((project, index) => (
+      {projects.map((project, index) => {
+  // Check if the index is within the bounds of arrayConfigsTSmW
+  if (index < arrayConfigsTSmW.length) {
+    return (
+      <React.Fragment key={index}>
+
+        <Triangle
+          base={arrayConfigsTSmW[index].base}
+          height={arrayConfigsTSmW[index].height}
+          fillColor={arrayConfigsTSmW[index].fillColor}
+          borderColor={arrayConfigsTSmW[index].borderColor}
+          index={index}
+          pageType='W'
+        />
+
         <PortfolioCard
-          key={index}
           title={project.title}
           image={project.image}
           blurb={project.blurb}
@@ -81,7 +94,14 @@ const WorkPage = ({ data }) => {
           borderColor={project.borderColor}
           imageBorderColor={project.imageBorderColor}
         />
-      ))}
+        
+      </React.Fragment>
+    );
+  }
+  // Optionally, return null or a placeholder component if there's no matching configuration
+  return null; // or <PlaceholderComponent />;
+})}
+
       </div>
     </main>
   );
