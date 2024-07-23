@@ -51,21 +51,6 @@ const WorkPage = ({ data }) => {
 
   return (
     <main className="work-main container">
-  
-    {/* triangle containers based on media query sizes */}
-    {/* <div className="triangleContainerSmW">
-            {arrayConfigsTSmW.map(({ base, height, fillColor, borderColor }, index) => (
-              <Triangle
-                base={base}
-                height={height}
-                fillColor={fillColor}
-                borderColor={borderColor}
-                index={index}
-                pageType='W' //indicate WorkPage
-              />
-            ))}
-      </div> */}
-   
 
       {projects.map((project, index) => {
   // Check if index is within bounds of arrayConfigsTSmW
@@ -100,8 +85,8 @@ const WorkPage = ({ data }) => {
       </React.Fragment>
     );
   }
-  // Optionally, return null or a placeholder component if there's no matching configuration
-  return null; // or <PlaceholderComponent />;
+  
+  return null; 
 })}
 
   
