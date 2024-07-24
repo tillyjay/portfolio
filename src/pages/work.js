@@ -53,14 +53,13 @@ const WorkPage = ({ data }) => {
     <main className="work-main ">   
 
       {projects.map((project, index) => {
-  // Check if index is within bounds of arrayConfigsTSmW
+  //check if index is within bounds of arrayConfigsTSmW
   if (index < arrayConfigsTSmW.length) {
 
     const cardViewClass = `card-view${index + 1}`;
     return (
       <React.Fragment key={index}>
    <div className={`card-view ${cardViewClass}`} index={index}>
- {/* map of array with fixed width*/}
       <Triangle
         base={arrayConfigsTSmW[index].base}
         height={arrayConfigsTSmW[index].height}
