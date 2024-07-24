@@ -1,6 +1,6 @@
 import React from "react";
 
-import Triangle from "../components/Triangle";
+import skillTriangle from "../components/skillTriangle";
 
 
 const skill = (
