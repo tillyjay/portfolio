@@ -1,6 +1,7 @@
-import * as React from "react"
+import React from "react";
+import { graphql } from "gatsby";
 
-
+import Triangle from "../components/Triangle";
 
 const SkillsPage = () => {
   return (
