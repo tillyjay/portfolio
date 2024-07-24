@@ -20,4 +20,4 @@ export const Head = () => (
   </>
 )
 
-export default SkillsPage
+export default ResumePage;

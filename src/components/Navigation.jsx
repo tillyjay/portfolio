@@ -65,7 +65,7 @@ const Navigation = () => {
           <li>
             <div className="menu-item">
               <div className="circle" id="circleThree"></div>
-              <Link id="skillsLink" to="/skills">Resume</Link>
+              <Link id="resumeLink" to="/resume">Resume</Link>
             </div>
           </li>
           <li>
