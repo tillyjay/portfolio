@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 
 import Triangle from "../components/Triangle";
 
-const SkillsPage = () => {
+const ResumePage = () => {
   return (
     <main>
   
@@ -15,8 +15,8 @@ const SkillsPage = () => {
 
 export const Head = () => (
   <>
-    <title>Skills</title>
-    <meta name="description" content="Skills and how long I've been developing each skill." />
+    <title>Resume</title>
+    <meta name="description" content="Resume followed by list of skills and how long I've been developing each skill." />
   </>
 )
 
