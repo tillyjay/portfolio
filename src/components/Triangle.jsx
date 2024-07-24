@@ -21,20 +21,9 @@ const Triangle = ({ base, height, fillColor, borderColor, index, pageType, image
     const triangleId = `triangle${pageType}${index + 1}`;
      
      return (
-        <div id={triangleId} style={{ position: 'relative' }}>
-            <canvas className="triangle" ref={canvas => canvas && drawTriangle(canvas.getContext('2d'))} width={base} height={height} />
-            {imageUrl && (
-                <img src={imageUrl} alt="" style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover', //ensures image covers entire triangle area
-                    zIndex: 1 //places the image above the canvas
-                }}/>
-            )}
-        </div>
+    <div id={triangleId}>
+        <canvas className="triangle" ref={canvas => canvas && drawTriangle(canvas.getContext('2d'))} width={base} height={height} />
+    </div>
      );
     
 };
