@@ -1,7 +1,7 @@
 ---
 title: "Social Media Feed"
 blurb: "This is a dynamic social media feed that provides users with a customizable interface through different themes. Admin abilities, connecting users with unique permissions such as moderating."
-image: "/images/ex4.png"
+image: "/images/work4.png"
 techUsed: [
 "MySQL",
 "PHP (Laravel framework)",

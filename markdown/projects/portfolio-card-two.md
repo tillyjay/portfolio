@@ -1,7 +1,7 @@
 ---    
 title: "Book Nook"
 blurb: "This project is a “Library Book” React-based web application with CRUD operations and search filter functionality. The application also includes a modal window for more info about the author."
-image: "/images/ex2.png"
+image: "/images/work2.png"
 techUsed: [
 "React",
 "MongoDB",
