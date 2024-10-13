@@ -1,5 +1,5 @@
 # Web Portfolio v.2
-This portfolio is a work in progress but combines React, Gatsby, Markdown, and SASS to create a fast, content-rich, and well-structured website. React is the core of the application, handling the dynamic components and providing an interactive user experience. Gatsby enhances React by acting as a static site generator, which pre-builds the site into highly optimized static files for performance and SEO benefits. Markdown is used for managing content such as blurbs for projects or the resume section, making it easy to update and organize without altering the code itself. Gatsby processes the Markdown files into HTML during build time, seamlessly integrating the content with the React components. Finally, SASS is employed for styling, allowing for modular, maintainable, and reusable CSS.
+This portfolio is a work in progress but combines React, Gatsby, GraphQL, and SASS to create a fast, content-rich, and well-structured website. React is the core of the application, handling the dynamic components and providing an interactive user experience. Gatsby enhances React by acting as a static site generator, which pre-builds the site into highly optimized static files for performance and SEO benefits. Markdown is used for managing content such as blurbs for projects or the resume section, making it easy to update and organize without altering the code itself. Gatsby queries the Markdown files using GraphQL during the build process to transform them into HTML and inject the content into React components, seamlessly integrating the data with the page structure.  Finally, SASS is employed for styling, allowing for modular, maintainable, and reusable CSS.
 
 For the design of the site, the Triangle and Circle components are mathematically crafted with reusable props to generate a variety of shapes that form the graphic designs. The Triangle calculates its base and height for precise rendering on a canvas, while the Circle uses diameter and CSS to create perfect circles. Both components, customizable by props like fillColor, borderColor, and index, are reused throughout the site to create dynamic, visually cohesive layouts, allowing for flexible and creative design patterns.
 
@@ -16,6 +16,7 @@ Currently working on the mobile version.
 ## Technologies Used
 - React 
 - Gatsby
+- GraphQL
 - SASS
 - Bootstrap 
 
