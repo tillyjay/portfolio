@@ -1,4 +1,4 @@
 ---
 title: "JavaScript" 
-time: "3 Years"
+time: "2.5 Years"
 ---
