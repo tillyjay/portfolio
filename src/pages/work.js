@@ -44,17 +44,22 @@ const WorkPage = ({ data }) => {
       fillColor: "#9C333E",
       borderColor: "#1e130c"
     },
+    {
+      base: 150,
+      height: 200,
+      fillColor: "#FFC736",
+      borderColor: "#1e130c"
+    },
 
   ]);
 
-// TRIANGLE IS CAUSING HIDE CARDS
-
+  
   return (
     <main className="work-main ">   
 
       {projects.map((project, index) => {
           console.log(`Rendering project index: ${index}`);
-  //check if index is within bounds of arrayConfigsTSmW
+          console.log('Projects:', projects);
   if (index < arrayConfigsTSmW.length) {
 
     const cardViewClass = `card-view${index + 1}`;
