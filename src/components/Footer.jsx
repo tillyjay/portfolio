@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => {  
+    //initialize state with current year
+    const [currentYear, setCurrentYear] = useState(new Date().getFullYear()); 
+
+    //update year dynamically
+    useEffect(() => {
+        const updateYear = () => {
+            setCurrentYear(new Date().getFullYear()); 
+        };
+        
+        //set interval to update the year at the end of the year
+        //update once a day
+        const intervalId = setInterval(updateYear, 1000 * 60 * 60 * 24); 
+        //cleanup interval on unmount
+        return () => clearInterval(intervalId); 
+    }, []);
 
     return (
         <footer className="footer-main">
@@ -22,7 +37,7 @@ const Footer = () => {
             </a>
             <div className="pTextFont text-center signOff">
             <div id="signOffName">tillyJay</div>
-            <div>2024</div>
+            <div>{currentYear}</div>
             </div>
             </div>
             <div className="circlesHorizontal">
