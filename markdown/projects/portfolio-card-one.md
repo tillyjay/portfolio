@@ -3,7 +3,7 @@ title: "Portfolio v.1"
 blurb: "My first portfolio site serves as a basic showcase of my work, providing visitors with insight into my skills. It includes work samples, resume, about me, and contact form sections."
 image: "/images/work1.png"
 techUsed: [
-"CSS (Flexbox for layout)",
+"CSS3",
 "JavaScript",
 "PHP"
 ]

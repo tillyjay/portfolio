@@ -1,17 +1,23 @@
 ---
-title: "Pintrest Clone"
-blurb: "This project is a “Library Book” React-based web application with CRUD operations and search filter functionality. The application also includes a modal window for more info about the author."
+title: "Shelter Asset Tracker (SAT)"
+blurb: "The SAT is an inventory app built around the idea of providing a reliable inventory system for Shelter Nova Scotia employees to be able to organize all their assets."
 image: "/images/work5.png"
 techUsed: [
-"HTML5",
-"CSS3"
+"React",
+"MySQL",
+"Express.js",
+"SASS",
+"Bootstrap",
+"JSON Web Tokens (JWT)"
 ]
 challenges: [
-"Card styling with overlay and transitions that highlighted different information. Allowed me to improve upon more advanced CSS skills."
+"The most difficult aspect was integrating security and authorization. This included creating user accounts with different  privileges and using JWT."
 ]
 futureImprovements: [
-"Introduce dynamic content updates to keep the site fresh and engaging.",
-"Expand user interaction features, such as commenting on and sharing images."
+"Add automated alerts such as item expiration.",
+"Mobile/tablet friendly interface.",
+"Customizable reporting exported as PDFs or spreadsheets."
+
 ]
 borderColor: "#9C333E"
 imageBorderColor: "#00ABC9"

@@ -3,10 +3,9 @@ title: "Incatpacitated"
 blurb: "This app provides users with a fun interface to select three different cat characteristics, and based on their choices, will match them with the perfect cat."
 image: "/images/work3.png"
 techUsed: [
-"JavaScript (fetch function for API data)",
-"jQuery library",
-"SASS",
-"DOM Manipulation",
+"JavaScript",
+"jQuery",
+"CSS",
 "PHP"
 ]
 challenges: [
