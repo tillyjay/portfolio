@@ -47,12 +47,13 @@ const WorkPage = ({ data }) => {
 
   ]);
 
-
+// TRIANGLE IS CAUSING HIDE CARDS
 
   return (
     <main className="work-main ">   
 
       {projects.map((project, index) => {
+          console.log(`Rendering project index: ${index}`);
   //check if index is within bounds of arrayConfigsTSmW
   if (index < arrayConfigsTSmW.length) {
 
@@ -85,6 +86,7 @@ const WorkPage = ({ data }) => {
       </React.Fragment>
     );
   }
+  console.log(projects); 
     return null; 
 })}
 
