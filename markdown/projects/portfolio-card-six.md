@@ -1,7 +1,7 @@
 ---
 title: "Milkshake"
 blurb: "The website demonstrates the journey from the initial business idea to the realization of a fully functional online presence. Involving the creation of a company “Milkshake”, encompassing various elements such as business concept/requirements, and logo design."
-image: "/images/work.png"
+image: "/images/work6.png"
 techUsed: [
 "HTML5",
 "CSS3",
