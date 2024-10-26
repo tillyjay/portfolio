@@ -85,13 +85,16 @@ const ContactForm = () => {
             type="submit"
           >
           {arrayConfigsT.map(({ base, height, fillColor, borderColor }, index) => (
+          <div key={index} id={`triangle${index + 1}`}>
               <Triangle
+                key={index}
                 base={base}
                 height={height}
                 fillColor={fillColor}
                 borderColor={borderColor}
-                index={index}
+                id={`triangle${index + 1}`}
               ></Triangle>
+              </div>
             ))}
           </button>
           </div>
