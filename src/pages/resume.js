@@ -13,7 +13,10 @@ const ResumePage = ({ data }) => {
 
   return (
     <main className="resume-main container">
-      <ResumeBlurb title={title} blurb={html} />
+      <ResumeBlurb 
+        title={title} 
+        blurb={html} 
+      />
 
     </main>
   );
