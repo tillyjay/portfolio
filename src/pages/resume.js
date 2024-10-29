@@ -13,6 +13,7 @@ const ResumePage = () => {
 }
 
 
+
 export const Head = () => (
   <>
     <title>Resume</title>
