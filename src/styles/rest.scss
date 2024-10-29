@@ -1,0 +1,87 @@
+//Reset Styles
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//set default font smoothing and remove outlines
+html {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.15;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+//reset body styling
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+//remove default styling for headings
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+//remove list styling and indentation
+ul, ol {
+  list-style: none;
+}
+
+//remove underline and color for links
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//remove default styling for images, making them responsive
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+}
+
+//reset form elements
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+//remove button defaults and add pointer
+button {
+  cursor: pointer;
+}
+
+//remove outline on focused elements, add custom outline if needed
+:focus {
+  outline: none;
+}
+
+//set table layout, remove borders
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
