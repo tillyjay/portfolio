@@ -11,7 +11,7 @@ const Footer = () => {
             setCurrentYear(new Date().getFullYear()); 
         };
         
-        //set interval to update the year at the end of the year
+        //set interval to update year at end of the year
         //update once a day
         const intervalId = setInterval(updateYear, 1000 * 60 * 60 * 24); 
         //cleanup interval on unmount

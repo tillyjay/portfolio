@@ -1,0 +1,70 @@
+body
+  background-color: #E1E1E1
+  
+.footer-main
+
+  .footerBase
+    height: 250px
+    padding-top: 120px
+    padding-bottom: 0 
+    background-color: #E1E1E1
+    overflow: visible 
+    margin: 0
+
+
+  .foot
+    background-color: $light-red
+    width: 100%
+    margin: 0 auto
+    transform: skewY(7deg)
+    height: 450px
+    padding-bottom: 100px
+    border-top: 1px solid $black
+
+  .unskew
+    transform: skewY(-7deg)
+
+  .iconsRow
+    margin-bottom: -50px
+
+  .linkedIcon, .githubIcon
+    width: 50px
+
+  .linkedIcon
+    border-radius: 15%
+    border: 1.5px solid $black
+
+  .githubIcon
+    border-radius: 50%
+    border: 1.5px solid $black
+
+  .signOff
+    background-color: $gold
+    padding: 5px
+    height: 50px
+    border-radius: 10px
+    border: 1px solid $black
+
+  #signOffName
+    padding-top: 5px
+
+  //arger screen styles
+  @media screen and (min-width: 601px)
+    .footerBase
+      overflow: auto
+      height: 100px
+      padding-top: 120px
+      padding-bottom: 140px
+
+    .foot
+      height: 400px
+      padding-bottom: 0
+      border-top: none
+
+    .linkedIcon, .githubIcon
+      width: 60px
+
+    .signOff
+      padding: 10px
+      height: 60px
+      border: 1.5px solid $black
