@@ -16,7 +16,7 @@ const ResumePage = () => {
 export const Head = () => (
   <>
     <title>Resume</title>
-    <meta name="description" content="Resume followed by list of skills and how long I've been developing each skill." />
+    <meta name="description" content="Resume followed by list of skills and volunteer work." />
   </>
 )
 

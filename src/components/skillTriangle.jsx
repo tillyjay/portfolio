@@ -3,9 +3,9 @@ import React from "react";
 const skillTriangle = ({ base, height, fillColor, borderColor, index, pageType, imageUrl }) => {
     const drawTriangle = (context) => {
         context.beginPath();
-        context.moveTo(0, 0); // starting point
-        context.lineTo(base, 0); // base of the triangle
-        context.lineTo(base / 2, height); // height of triangle
+        context.moveTo(0, 0); //starting point
+        context.lineTo(base, 0); //base of triangle
+        context.lineTo(base / 2, height);// height of triangle
         context.closePath();
 
         context.fillStyle = fillColor;
@@ -29,7 +29,7 @@ const skillTriangle = ({ base, height, fillColor, borderColor, index, pageType, 
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    objectFit: 'cover', //ensures image covers entire triangle area
+                    objectFit: 'cover',//ensures image covers entire triangle area
                     zIndex: 1 //places image above canvas
                 }}/>
             )}
